@@ -11,15 +11,6 @@ resource "aws_s3_bucket" "main" {
     ManagedBy   = "terraform"
   }
 }
-resource "aws_s3_bucket" "main" {
-  bucket = local.bucket_name
-  tags = {
-    Name        = local.bucket_name
-    Project     = var.project
-    Environment = var.environment
-    ManagedBy   = "terraform"
-  }
-}
 
 resource "aws_s3_bucket_versioning" "main" {
   bucket = aws_s3_bucket.main.id
