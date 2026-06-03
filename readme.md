@@ -1,4 +1,4 @@
-# terraform-aws-s3-auy1105-grupo-N
+# terraform-aws-s3-auy1105-grupo-6
 
 Módulo Terraform para creación de buckets S3 seguros: acceso público bloqueado,
 cifrado AES256 en reposo y versionado configurable.
