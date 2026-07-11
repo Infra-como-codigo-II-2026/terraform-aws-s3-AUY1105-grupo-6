@@ -5,6 +5,17 @@ y [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-07-10
+
+### Added
+- Recurso `aws_dynamodb_table` opcional para locking del state, condicional a `create_lock_table`
+- Variable `create_lock_table` (default `false`, no rompe compatibilidad con usos existentes)
+- Outputs `dynamodb_table_name` y `dynamodb_table_arn`
+- Documentación de uso como backend de state con locking en README.md
+
+### Changed
+- README actualizado con ejemplo de uso específico para backend de state
+
 ## [1.0.0] - 2026-06-01
 
 ### Added
